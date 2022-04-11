@@ -1,9 +1,8 @@
-function superbowlWin(record) {
-    let winningYear = record.find(element => element.result === "W")
-    if (winningYear) {
-    return winningYear.year;
-    }
-    else {
+function superbowlWin(record){
+    let winning = record.find(element => element.result === "W" )
+    if(winning){
+        return winning.year;
+    }else {
         return undefined;
-    }
+      }
   }
